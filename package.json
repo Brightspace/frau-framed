@@ -1,0 +1,31 @@
+{
+  "name": "frau-framed",
+  "version": "1.0.0",
+  "description": "Determine if a FRA is iframed or not",
+  "main": "src/framed.js",
+  "scripts": {
+    "test": "istanbul cover --root src _mocha -- spec",
+    "report-cov": "cat ./coverage/lcov.info | coveralls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Brightspace/frau-framed.git"
+  },
+  "keywords": [
+    "d2l",
+    "frau",
+    "iframe"
+  ],
+  "author": "D2L Corporation",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Brightspace/frau-framed/issues"
+  },
+  "homepage": "https://github.com/Brightspace/frau-framed#readme",
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "coveralls": "^2.11.3",
+    "istanbul": "^0.3.17",
+    "mocha": "^2.2.5"
+  }
+}
