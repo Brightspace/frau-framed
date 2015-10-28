@@ -4,7 +4,9 @@
   "description": "Determine if a FRA is iframed or not",
   "main": "src/framed.js",
   "scripts": {
-    "test": "istanbul cover --root src _mocha -- spec",
+    "check-style": "eslint .",
+    "test-unit": "istanbul cover --root src _mocha -- spec",
+    "test": "npm run check-style && npm run test-unit",
     "report-cov": "cat ./coverage/lcov.info | coveralls"
   },
   "repository": {
@@ -25,6 +27,8 @@
   "devDependencies": {
     "chai": "^3.2.0",
     "coveralls": "^2.11.3",
+    "eslint": "^1.7.3",
+    "eslint-config-brightspace": "0.0.3",
     "istanbul": "^0.3.17",
     "mocha": "^2.2.5"
   }
