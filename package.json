@@ -25,11 +25,11 @@
   },
   "homepage": "https://github.com/Brightspace/frau-framed#readme",
   "devDependencies": {
-    "chai": "^3.2.0",
-    "coveralls": "^2.11.3",
+    "chai": "^3.4.0",
+    "coveralls": "^2.11.4",
     "eslint": "^1.7.3",
     "eslint-config-brightspace": "0.0.3",
-    "istanbul": "^0.3.17",
-    "mocha": "^2.2.5"
+    "istanbul": "^0.4.0",
+    "mocha": "^2.3.3"
   }
 }
