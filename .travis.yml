@@ -1,14 +1,14 @@
 language: node_js
 node_js:
-- iojs
-- '0.12'
+  - iojs
+  - '0.12'
 sudo: false
 after_success: npm run report-cov
 deploy:
-  provider: npm
-  email: d2ltravisdeploy@d2l.com
-  api_key:
-    secure: b7pzQ5N4GBf/SMnDRlgqe0DlNYLmQRRyz01/CPpn28ygtroAbpT5whRD4vvp4FOn3Seh1TKjYBzukRSX/otb1rMk55mN90Zsqt3SJrmI+USYMovgBf22wsD5OoWfMV/ZZUbpdySVUlqHfCOjJA8wAj3TeyzSfg8p0DcI5u2Gh4jonaPu6lMt5VNcndLqujmrYfHb+d7gC7vI8/7EReJTEh/QshvcB0c2FuSSoOfYMiuceWQjx0SnYc9s+JA2cGSG1qKnalUH9M0z+qjgaKZiMBjbNKd3jx8OU7NN41ZpIKWIPULGlT0xzUSVvSVC4YyuzUfAHlBGWrPqK0iGHGefflF5GpZHHiJN5OXZhyjDTbuXn2OhfIeS5RhjXOSKZ514aY82Es1/i8GHajqPxObytDxVvj9KXn1k+xokHeAbfIuLGAxctC9tzbtu0Uc9ht4yE/uRNqmFMmkU1QnqaUJROlrnf+qLH94Hxe2u1evPFezF2612Ui0hSi6HAFtytUi/DVHuE/9T4SI9CvpsqgwmVSYTzEYxM28S2Ef8YW1qifuOUOU8IZKWHSURVRdM2N2WsS2S03zDrzmJOq3/CjAagFuQeJAuOpvuPOVWthRSBRyis1eoZVAv+ctvQGHy9y7broFzQW0Ma4G2Hn5p0HO4QhypdMzxW7G53ZTBhkwlKRU=
+  provider: script
+  script: echo "npm credentials were revoked on 2018-07-12. We regenerated many
+    credentials, but this repository had no changes in at least 18 months and
+    was skipped. Reconfigure npm deployments. -omsmith"; exit 1
   on:
     all_branches: true
     tags: true
