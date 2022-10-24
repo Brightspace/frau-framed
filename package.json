@@ -18,6 +18,9 @@
     "frau",
     "iframe"
   ],
+  "files": [
+    "/src"
+  ],
   "author": "D2L Corporation",
   "license": "Apache-2.0",
   "bugs": {
